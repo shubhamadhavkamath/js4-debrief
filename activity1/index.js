@@ -128,8 +128,8 @@ let listButton = document.querySelector("#btnHobbies");
 function makeHobbyList () {
   let inputValue = prompt("Enter your hobby: ");
   let l = document.createElement('li');
-  let t = document.createTextNode(inputValue);
-  addHobby.appendChild(l.appendChild(t));
+  l.innerText = inputValue;
+  addHobby.appendChild(l);
 
 }
   
